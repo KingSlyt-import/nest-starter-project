@@ -36,7 +36,7 @@ model Bookmark {
   link        String
 
   authorId Int
-  author   User @relation(fields: [authorId], references: [id])
+  author   User @relation(fields: [authorId], references: [id], onDelete: Cascade)
 
   @@map("bookmarks")
 }
