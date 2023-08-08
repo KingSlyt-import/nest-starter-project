@@ -62,8 +62,6 @@ export class AuthService {
     }
 
     const token = await this.generateToken(existingUser.id, existingUser.email);
-    console.log(token);
-
     return token;
   }
 
